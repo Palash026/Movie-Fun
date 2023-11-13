@@ -1,9 +1,11 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 interface Movie {
+  id: string;
   name: string;
   title: string;
   releaseDate: Date;
+  poster_path: string;
 }
 
 interface MovieCardProps {
@@ -12,11 +14,11 @@ interface MovieCardProps {
 
 export default function MovieCard({ movie }: MovieCardProps) {
   return (
-    <Link href="/" className="max-w-xs cursor-pointer">
+    <Link href={`/movies/${movie?.id}`} className="max-w-xs cursor-pointer">
       <div className="relative">
         <div className="overflow-hidden">
           <img
-            src="https://wallpapers.com/images/hd/all-superhero-of-avengers-8umq9c3bffyuqmpb.webp"
+            src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}?language=en-US`}
             alt="Movie"
             className="w-full h-auto"
           />
