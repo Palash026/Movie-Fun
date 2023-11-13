@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
@@ -10,7 +11,7 @@ export default function Navbar() {
             alt="Logo"
             className="h-10"
           />
-          <h1 className="text-lg text-blue-500 font-bold">Movie Addict</h1>
+          <Link href="/movies" className="text-lg text-blue-500 font-bold">Movie Addict</Link>
         </div>
 
         <div className="hidden sm:block">
