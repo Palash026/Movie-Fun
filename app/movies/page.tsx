@@ -6,6 +6,8 @@ interface Movie {
   name: string;
   title: string;
   releaseDate: Date;
+  image: string;
+  poster_path: string;
 }
 
 const MoviePage = async () => {
@@ -21,7 +23,6 @@ const MoviePage = async () => {
           <MovieCard movie={movie}></MovieCard>
         ))}
       </div>
-      {/* {movies.map(movie => <p>{movie.name}</p>)} */}
     </div>
   );
 };
