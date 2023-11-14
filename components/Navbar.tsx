@@ -1,23 +1,21 @@
 import Link from "next/link";
-import React from "react";
 import Search from "./Search";
 
 export default function Navbar() {
+  
   return (
-    <nav className="p-4">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center">
+    <nav className="w-full fixed z-10 bg-white">
+      <div className="mx-auto max-w-4xl px-2 py-4 md:flex items-center justify-between">
+        <div className="flex items-center sm:justify-center">
           <img
             src="https://blog.tubikstudio.com/wp-content/uploads/2017/10/logo_animation_tubik_design-1.gif"
             alt="Logo"
             className="h-10"
           />
-          <Link href="/movies" className="text-lg text-blue-500 font-bold">Movie Addict</Link>
+          <Link href="/movies" className="text-blue-600 text-xl font-semibold">Movie Addict</Link>
         </div>
 
-        <div className="hidden sm:block">
-          <Search/>
-        </div>
+        <Search/>
       </div>
     </nav>
   );
