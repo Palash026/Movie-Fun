@@ -8,9 +8,7 @@ export default function Search() {
 
     useEffect(() => {
         if(query){
-            const url = ``;
-            router.push('/movies/search?query=movie name')
-            console.log('search')
+            router.push('/movies/search?query='+query);
         }else{
             router.push('/movies');
         }
