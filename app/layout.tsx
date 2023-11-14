@@ -19,12 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <input
-          type="text"
-          placeholder="Search..."
-          className="px-4 py-2 rounded-lg bg-gray-200 text-blue-600 focus:outline-none w-full sm:hidden"
-        />
-        {children}
+        <div className="pt-20">
+          {children}
+        </div>
       </body>
     </html>
   )

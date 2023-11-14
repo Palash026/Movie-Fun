@@ -17,7 +17,7 @@ export default function Search() {
     <input
       type="text"
       placeholder="Search..."
-      className="px-4 py-2 rounded-lg bg-gray-200 text-blue-600 focus:outline-none"
+      className="px-4 py-2 rounded-lg bg-gray-200 text-blue-600 focus:outline-none w-full md:max-w-md"
       onChange={(e) => setQuery(e.target.value)}
     />
   );
