@@ -11,6 +11,3 @@ export default async function getMovieById(id: string) {
 
   return await fetch(url, options);
 }
-
-// curl --request GET \
-//      --url ''

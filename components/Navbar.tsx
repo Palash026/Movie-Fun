@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Search from "./Search";
 
 export default function Navbar() {
   return (
@@ -15,11 +16,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden sm:block">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="px-4 py-2 rounded-lg bg-gray-200 text-blue-600 focus:outline-none"
-          />
+          <Search/>
         </div>
       </div>
     </nav>

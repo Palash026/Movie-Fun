@@ -1,20 +1,10 @@
 import MovieCard from "@/components/MovieCard";
 import getMovie from "@/services/movie.service";
-
-interface Movie {
-  id: string;
-  name: string;
-  title: string;
-  releaseDate: Date;
-  image: string;
-  poster_path: string;
-}
+import Movie from "@/interface/movie.interface";
 
 const MoviePage = async () => {
   const res = await (await getMovie()).json();
   const movies: Movie[] = res.results;
-
-  console.log(movies);
 
   return (
     <div className="container mx-auto p-4">
