@@ -1,5 +1,5 @@
 export default async function getMovieById(id: string) {
-  const url = `https://api.themoviedb.org/3/movie/${id}?api_key=4d29a5206bf98bffd9106fc16e51a1ae`;
+  const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.api_token}`;
   const options = {
     method: "GET",
     headers: {
