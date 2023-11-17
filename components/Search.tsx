@@ -10,7 +10,7 @@ export default function Search() {
         if(query){
             router.push('/movies/search?query='+query);
         }else{
-            router.push('/movies');
+            router.push('/');
         }
     }, [query])
   return (
