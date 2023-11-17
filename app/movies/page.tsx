@@ -5,7 +5,7 @@ import MovieList from "@/components/MovieList";
 
 const MoviePage = async () => {
   const res = await (await getMovie()).json();
-  const movies: Movie[] = res.results;
+  const movies: Movie[] = res?.results;
 
   return <MovieList movies={movies}/>
 };
