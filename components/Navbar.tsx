@@ -12,7 +12,7 @@ export default function Navbar() {
             alt="Logo"
             className="h-10"
           />
-          <Link href="/movies" className="text-blue-600 text-xl font-semibold">Movie Addict</Link>
+          <Link href="/" className="text-blue-600 text-xl font-semibold">Movie Addict</Link>
         </div>
 
         <Search/>
