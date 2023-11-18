@@ -15,7 +15,7 @@ export default function Navbar() {
           <Link href="/" className="text-blue-600 text-xl font-semibold">Movie Addict</Link>
         </div>
 
-        {/* <Search/> */}
+        <Search/>
       </div>
     </nav>
   );
