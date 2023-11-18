@@ -1,18 +1,18 @@
-"use client"
-import { useRouter } from "next/navigation";
+// "use client"
+// import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function Search() {
     const [query, setQuery] = useState('');
-    const router = useRouter();
+    // const router = useRouter();
 
-    useEffect(() => {
-        if(query){
-            router.push('/movies/search?query='+query);
-        }else{
-            router.push('/');
-        }
-    }, [query])
+    // useEffect(() => {
+    //     if(query){
+    //         router.push('/movies/search?query='+query);
+    //     }else{
+    //         router.push('/');
+    //     }
+    // }, [query])
   return (
     <input
       type="text"
