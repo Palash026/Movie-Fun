@@ -1,18 +1,7 @@
 import Link from "next/link";
+import Movie from "@/interface/movie.interface";
 
-interface Movie {
-  id: string;
-  name: string;
-  title: string;
-  releaseDate: Date;
-  poster_path: string;
-}
-
-interface MovieCardProps {
-  movie?: Movie;
-}
-
-export default function MovieCard({ movie }: MovieCardProps) {
+export default function MovieCard({ movie }: { movie: Movie }) {
   return (
     <Link href={`/movies/${movie?.id}`} className="max-w-xs cursor-pointer">
       <div className="relative">

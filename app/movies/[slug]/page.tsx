@@ -1,15 +1,5 @@
 import getMovieById from "@/services/movieById.service";
-
-interface Movie{
-    name: string;
-    title: string;
-    tagline: string;
-    release_date: string;
-    runtime: number;
-    poster_path: string;
-    backdrop_path: string;
-    overview: string;
-}
+import Movie from "@/interface/movie.interface";
 
 export default async function page({ params }: { params: { slug: string } }) {
   const movie: Movie = await (await getMovieById(params.slug)).json();
